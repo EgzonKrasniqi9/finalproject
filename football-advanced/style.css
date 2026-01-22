@@ -1,0 +1,36 @@
+/*
+Theme Name: Football Advanced Theme
+Author: Your Name
+Version: 1.0
+*/
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3f6fa;
+    color: #222;
+}
+
+a {
+    color: #0b6623;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    max-width: 95%;
+    margin: auto;
+}
+header {
+    background: linear-gradient(135deg,#0b6623,#0f9d58);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+article {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
