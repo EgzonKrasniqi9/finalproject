@@ -50,7 +50,7 @@ if (!defined('ABSPATH')) {
                             <div class="season-content">
                                 <h3>Season 1: Prison Break</h3>
                                 <div class="trailer-section">
-                                    <iframe width="100%" height="250" src="https://youtu.be/AL9zLctDJaU?si=PdZqJQrUU-s_FN8R" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="100%" height="250" src="https://www.tiktok.com/@derasonsteps/video/7262486241709542661?is_from_webapp=1&sender_device=pc" frameborder="0" allowfullscreen></iframe>
                                 </div>
                                 <div class="characters-section">
                                     <h4>Main Characters:</h4>

@@ -399,3 +399,16 @@ add_action('init', function() {
         prison_break_create_default_categories();
     }
 });
+
+/* ============================================
+   REDIRECT UNCATEGORIZED TO 404
+   ============================================ */
+
+function prison_break_redirect_uncategorized() {
+    if (is_category() && is_category('uncategorized')) {
+        wp_redirect(home_url('/404.php'), 301);
+        exit;
+    }
+}
+add_action('template_redirect', 'prison_break_redirect_uncategorized');
+
