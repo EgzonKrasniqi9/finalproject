@@ -1,0 +1,313 @@
+/**
+ * Extreme Sports Elite Theme - Custom CSS
+ * 
+ * Additional styles and enhancements
+ */
+
+/* ============================================
+   CUSTOM STYLES FOR EXTREME SPORTS THEME
+   ============================================ */
+
+/* Post Card Enhancements */
+.post-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.post-card:hover {
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+}
+
+/* Custom Post Type Styles */
+.post-type-athletes .single-post-title::before {
+    content: '👤 ';
+}
+
+.post-type-events .single-post-title::before {
+    content: '🎯 ';
+}
+
+.post-type-gear .single-post-title::before {
+    content: '⚙️ ';
+}
+
+.post-type-videos .single-post-title::before {
+    content: '▶️ ';
+}
+
+/* Post Format Badges */
+.post-format-video,
+.post-format-gallery,
+.post-format-audio,
+.post-format-quote {
+    border-left: 5px solid #ff6b35;
+    padding-left: 15px;
+}
+
+/* Tag Clouds */
+.wp-tag-cloud a {
+    color: #004e89 !important;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.wp-tag-cloud a:hover {
+    color: #ff6b35 !important;
+}
+
+/* Blockquote Styles */
+blockquote {
+    border-left: 5px solid #ff6b35;
+    padding: 20px;
+    margin: 20px 0;
+    background: #f9f9f9;
+    font-style: italic;
+    color: #555;
+}
+
+/* Code Block Styles */
+code,
+pre {
+    background: #2d2d2d;
+    color: #f8f8f2;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+pre {
+    padding: 15px;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #004e89;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background: #f9f9f9;
+}
+
+/* Image Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.gallery-item {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Button Styles */
+.wp-block-button__link,
+input[type="submit"],
+input[type="button"],
+button {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 600;
+}
+
+.wp-block-button__link:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+    background: #f7931e;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 5px rgba(255, 107, 53, 0.3);
+}
+
+/* WooCommerce Compatibility (if needed) */
+.woocommerce-product-gallery {
+    margin-bottom: 30px;
+}
+
+.product-price {
+    color: #ff6b35;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Alert Boxes */
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.alert-info {
+    background: #d1ecf1;
+    border-left: 5px solid #0c5460;
+    color: #0c5460;
+}
+
+.alert-success {
+    background: #d4edda;
+    border-left: 5px solid #155724;
+    color: #155724;
+}
+
+.alert-warning {
+    background: #fff3cd;
+    border-left: 5px solid #856404;
+    color: #856404;
+}
+
+.alert-danger {
+    background: #f8d7da;
+    border-left: 5px solid #721c24;
+    color: #721c24;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 107, 53, 0.3);
+    border-radius: 50%;
+    border-top-color: #ff6b35;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff6b35;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f7931e;
+}
+
+/* Selection Color */
+::selection {
+    background: #ff6b35;
+    color: white;
+}
+
+::-moz-selection {
+    background: #ff6b35;
+    color: white;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .site-header,
+    .site-footer,
+    .sidebar,
+    .comments-section,
+    .edit-post,
+    .read-more {
+        display: none;
+    }
+
+    .post-title {
+        color: black;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+}
+
+/* Accessibility */
+.screen-reader-text {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Focus Visible for Accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #ff6b35;
+    outline-offset: 2px;
+}
